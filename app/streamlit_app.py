@@ -5,8 +5,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+import pandas as pd
 from simulator.simulator import ber, BITS
-
 st.set_page_config(page_title="Smart Modulation Advisor", layout="wide")
 st.title("Smart Modulation Advisor")
 st.caption("Recommends the fastest modulation whose bit error rate stays under your limit.")
@@ -63,3 +63,7 @@ ax.set_title("BER vs SNR (Monte Carlo simulation, AWGN)")
 ax.grid(True, which="both", alpha=0.3)
 ax.legend()
 st.pyplot(fig)
+df = pd.DataFrame({"SNR_dB": xs, **data})
+st.subheader("Results table")
+st.dataframe(df)
+st.download_button("Download CSV", df.to_csv(index=False), "ber_results.csv", "text/csv")
