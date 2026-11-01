@@ -1,5 +1,6 @@
 # Smart Modulation Advisor
 **Live demo:** https://smart-modulation-advisor-82xrmchur7tvnxsisektcq.streamlit.app/
+
 A Python simulator and interactive app that recommends the **fastest modulation scheme** (BPSK, QPSK or 16-QAM) whose bit error rate (BER) stays under a user-set limit at the current signal quality (SNR).
 
 ![App screenshot](results/app_screenshot.png)
