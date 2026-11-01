@@ -32,7 +32,7 @@ ok = [n for n in BITS if data[n][snr] < limit]
 if ok:
     best = max(ok, key=BITS.get)
     best_ber = data[best][snr]
-    ber_text = f"{best_ber:.1e}" if best_ber > 0 else "below 5e-06 (no errors observed)"
+    ber_text = f"{best_ber:.1e}" if best_ber > 0 else "< 5e-06 (no errors observed)"
     st.success(
         f"Recommended at {snr} dB: {best}. It carries {BITS[best]} bit(s) per symbol, "
         f"with BER {ber_text}, below the limit of {limit:.0e}."
