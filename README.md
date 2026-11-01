@@ -66,4 +66,4 @@ Error-correcting codes, a fading channel, more schemes (8-PSK, 64-QAM), and a li
 ## Authors
 
 - Prateek Prameet Padhy ([@pratweeakk-dvz](https://github.com/pratweeakk-dvz)): simulator, BER plots, advisor logic, Streamlit app, tests
-- Niharika Jha ([@niharikajha2307](https://github.com/niharikajha2307)): README review and documentation (in progress)
+- Niharika Jha ([@niharikajha2307](https://github.com/niharikajha2307)): README review and documentation 
